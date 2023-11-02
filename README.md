@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Overview - Interactive comments section solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an interactive comment section where users can post comments, reply to others, and upvote or downvote comments. It's built with React and designed to be integrated into websites that require a dynamic discussion platform.
 
-## Available Scripts
+It`s also a solution to the [Interactive comments section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9). 
 
-In the project directory, you can run:
+## Features
+Users should be able to:
 
-### `npm start`
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Create, Read, Update, and Delete comments and replies
+- Upvote and downvote comments
+- Real-time update comments without page refresh (soon)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- ### Screenshot -->
+<!-- ### Links -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## My Process
 
-### `npm test`
+This project was a hands-on journey to understand the inner workings of state management and props in React. The process was iterative and incremental, with each step building upon the last.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I kicked off by delineating the necessary components, followed by crafting a static version of the application. Then, I dove into the creation of components, assigning responsibilities and interactions. The focus was to make it work, get a practical understanding, and learn along the way. 
 
-### `npm run build`
+### Built with
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [React](https://reactjs.org/) - JS library
+- CSS custom properties
+- Flexbox
+- Grid
+- Mobile-first workflow
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### What I learned
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In this project, I reinforced my understanding of React state management and component-based architecture. I also learned how to handle nested comments and implement a voting system.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Code snippets
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```js
+const findAndAddReply = (comments) => {
+  return comments.map(comment => {
+    if (comment.id === parentCommentId) {
+      return { ...comment, replies: [...comment.replies, contentObj] };
+    }
+    if (comment.replies?.length > 0) {
+      return { ...comment, replies: findAndAddReply(comment.replies) };
+    }
+    return comment;
+  });
+};
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- ### Continued development -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
+To set up the project locally, follow these steps:
 
-## Learn More
+1) Clone the repository <br>
+`git clone https://github.com/aecio-neto/Interactive-comments-section`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2) Install NPM packages <br>
+`npm install`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3) Start the development server <br>
+`npm start`
 
-### Code Splitting
+After installation, the app will be running on http://localhost:3000. Open this URL in your browser to start using the interactive comment section.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ReactJS Documentation
+- [ReactJS Documentation](https://react.dev/learn) 
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Linkedin](https://linkedin.com/in/aecio-neto)
+- [Github](https://github.com/aecio-neto)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
