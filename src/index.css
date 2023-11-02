@@ -1,0 +1,217 @@
+:root {
+  --moderate-blue: #5457b6;
+  --soft-red: hsl(358, 79%, 66%);
+  --light-grayish-blue: hsl(239, 57%, 85%);
+  --pale-red: hsl(357, 100%, 86%);
+  --dark-blue: hsl(212, 24%, 26%);
+  --grayish-blue: hsl(211, 10%, 45%);
+  --light-gray: hsl(223, 19%, 93%);
+  --very-light-gray: hsl(228, 33%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* Mobile First */
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  color: var(--dark-blue);
+  background-color: var(--very-light-gray);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+.comment {
+  display: grid;
+  align-items: start;
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 2px 2px var(--light-gray);
+}
+
+.user-info {
+  display: flex;
+  align-items: start;
+}
+
+.user-info img {
+  max-width: 50px;
+  height: auto;
+  margin-right: 1em;
+}
+
+.user-info p {
+  margin-right: 0.5rem;
+}
+
+.comment-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mentioned-username {
+  color: var(--moderate-blue);
+  font-weight: bold;
+}
+
+.upvote-container {
+  width: 90px;
+  padding: 0.4rem;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--moderate-blue);
+  background-color: var(--light-gray);
+  border-radius: 10px;
+}
+
+.upvote-container button {
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 0px 10px;
+  border: none;
+  color: var(--light-grayish-blue);
+  display: flex; /* Torna o botão um container flex */
+  justify-content: center; /* Centraliza o ícone dentro do botão */
+  align-items: center; /* Centraliza o ícone verticalmente dentro do botão */
+}
+
+.upvote-container span {
+  padding: 0px 10px;
+}
+
+.reply-button {
+  position: absolute; /* Posicionamento absoluto */
+  bottom: 1.4rem; /* 1rem acima da parte inferior do container */
+  right: 1rem;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0px 10px;
+  border: none;
+  color: var(--moderate-blue);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.reply-button:hover {
+  color: var(--light-grayish-blue);
+  background-color: var(--white);
+}
+
+.reply-button:hover .icon-path {
+  fill: var(--light-grayish-blue);
+}
+
+.add-comment > button:hover {
+  background-color: var(--light-grayish-blue);
+}
+
+textarea:hover {
+  cursor: pointer;
+  outline: 1px solid var(--moderate-blue);
+}
+
+.replies {
+  width: 90%;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  float: right;
+  border-left: 2px solid var(--light-gray);
+}
+
+.add-comment {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 2px 2px var(--light-gray);
+}
+
+.add-comment img {
+  align-self: center;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5em;
+  border: 1px solid var(--light-gray);
+  border-radius: 0.5rem;
+}
+
+.comment-button {
+  margin-top: 0.5rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--moderate-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 60%;
+  }
+
+  .comment {
+    display: grid;
+    justify-content: start;
+    min-width: 100%;
+    column-gap: 0rem;
+    grid-template-areas:
+      "upvote user"
+      "upvote paragraph"
+      "upvote reply";
+  }
+
+  .add-comment {
+    width: 85%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .paragraph {
+    min-width: 768px;
+  }
+
+  .upvote-container {
+    grid-area: upvote;
+    flex-direction: column;
+    max-width: 30px;
+    margin-right: 1rem;
+  }
+
+  .upvote-container button,
+  .upvote-container span {
+    margin: 0.5rem;
+  }
+
+  .reply-button {
+    top: 2rem; /* Alinha ao topo do container pai */
+    right: 1rem; /* Alinha à direita do container pai */
+    max-height: 2rem;
+  }
+}

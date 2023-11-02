@@ -1,0 +1,56 @@
+/* Notas e observações
+
+Carreguei os comentários. Tenho uma versão estática. E agora? 
+Hora de começar a inserir os States. 
+Há a versão ativa do leiaute, com alguns hovers. 
+Começar deles? Mais simples? 
+Não, o primeiro que vou fazer é adicionar um comentário. 
+
+
+Componentes necessários 
+- CommentSection
+- Comment
+- Upvote
+- Button
+-- Edit
+-- Delete
+-- Reply
+-- Comment
+- AddComment
+- CurrentUser
+
+Para Fazer
+
+[ ] Adicionar a opção e editar o comentário do usuario logado
+
+  [x] Adicionar um reply
+  [x] fazer o usuário que contém o reply ser citado no inicio da resposta. 
+  [x] responder replies também
+  [x] esconder form após envio da resposta
+  [ ] colocar imagem do form do lado esquerdo do textarea
+  [ ] tornar as respostas aninhadas em um único level. 
+
+
+[x] fazer o upvote mostrar/atualizar o score 
+
+[x] adicionar o createdAt como '2 dias atras ou 1 semana atrás'
+ficou um pouco confuso, acho que importar uma função utilitária seria melhor. Mas é o caso de uma aplicação tão pequena? 
+
+[x] adicionar novo comentário
+
+Preciso transformar o AddComment em um formulário controlado. 
+Esse formulário passa os dados para o objeto json que já existe. 
+Aqui é onde o bicho pega. Qual o passo a passso?
+Consultar AI ou bater cabeça? Bater Cabeça. 
+
+Vamos supor:
+Escrevi o comentário, cliquei em submit. 
+A ação será AddComment, o que a addComment faz? 
+pega o commentList e ?
+adiciona o objeto nov
+cria id
+
+minha principal dúvida é esse commentObj
+
+
+*/
