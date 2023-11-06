@@ -9,8 +9,8 @@
   "comments": [
     {
       "id": 1,
-      "content": "Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.",
-      "createdAt": "1 month ago",
+      "content": "Impressionante! Embora pareça que a funcionalidade de arrastar poderia ser aprimorada. Mas no geral, parece incrível. Você acertou no design e a responsividade em vários pontos de interrupção funciona muito bem.",
+      "createdAt": "1 mês atrás",
       "score": 12,
       "user": {
         "image": { 
@@ -23,8 +23,8 @@
     },
     {
       "id": 2,
-      "content": "Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!",
-      "createdAt": "2 weeks ago",
+      "content": "Seu projeto parece incrível! Há quanto tempo você está programando? Eu ainda sou novo nisso, mas estou pensando em mergulhar no React em breve. Talvez você possa me dar uma ideia de onde posso aprender React? Obrigado!",
+      "createdAt": "2 semanas atrás",
       "score": 5,
       "user": {
         "image": { 
@@ -36,8 +36,8 @@
       "replies": [
         {
           "id": 3,
-          "content": "If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.",
-          "createdAt": "1 week ago",
+          "content":  "Se você ainda está aprendendo, eu recomendaria focar nos fundamentos de HTML, CSS e JS antes de considerar o React. É muito tentador pular adiante, mas estabeleça uma base sólida primeiro.",
+          "createdAt": "1 semana atrás",
           "score": 4,
           "replyingTo": "maxblagun",
           "user": {
@@ -50,8 +50,8 @@
         },
         {
           "id": 4,
-          "content": "I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.",
-          "createdAt": "2 days ago",
+          "content":  "Não poderia concordar mais com isso. Tudo se move tão rápido e sempre parece que todos conhecem a mais nova biblioteca/framework. Mas os fundamentos são o que permanece constante.",
+          "createdAt": "2 dias atrás",
           "score": 2,
           "replyingTo": "ramsesmiron",
           "user": {

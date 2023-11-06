@@ -55,15 +55,22 @@ export function CommentSection() {
     })
   }
 
-  function timeSince(date) {
-    date = new Date(date)
+  function timeSince(dateString) {
+    const date = new Date(dateString)
+
+    if (isNaN(date.getTime())) {
+      return dateString
+    }
+
     const now = new Date()
     const secondsPast = (now.getTime() - date.getTime()) / 1000
 
     if (secondsPast < 604800) {
+      // Menos de uma semana
       const daysPast = Math.floor(secondsPast / 86400)
       return daysPast === 0 ? "Hoje" : daysPast + " dias atrás"
     } else {
+      // Uma semana ou mais
       const weeksPast = Math.floor(secondsPast / 604800)
       return `${weeksPast} ${weeksPast > 1 ? "semanas" : "semana"} atrás`
     }
