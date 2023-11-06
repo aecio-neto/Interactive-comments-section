@@ -29,6 +29,7 @@ Para Fazer
   [x] esconder form após envio da resposta
   [ ] colocar imagem do form do lado esquerdo do textarea
   [ ] tornar as respostas aninhadas em um único level. 
+  [ ] corrigir bugs
 
 
 [x] fazer o upvote mostrar/atualizar o score 
