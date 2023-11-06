@@ -13,8 +13,13 @@ Users should be able to:
 - Upvote and downvote comments
 - Real-time update comments without page refresh (soon)
 
-<!-- ### Screenshot -->
-<!-- ### Links -->
+### Screenshot
+![Versão Mobile](src/images/printscreem/mobile%20version.png)
+![Versão Desktop](src/images/printscreem/web%20version.png)
+
+### Links
+
+<a href="https://aecio-trackcalorie.netlify.app/" target="_blank">Ver ao vivo</a>
 
 ## My Process
 
